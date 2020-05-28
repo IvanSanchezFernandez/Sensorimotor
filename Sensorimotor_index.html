@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+
+
+<title>EEG1 wake sleep stages</title>
+<link href = "Sensorimotor_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "Sensorimotor_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<br>
+<br>
+
+
+<h2><b>QUESTIONS</b></h2>
+
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>Q1. Regarding the functional anatomy of the sensorimotor cortex, check all true statement(s):</b></p>
+<br>
+<input type="checkbox" id="q1a" name="question" value=""> Primary motor and primary sensory cortices are separated by the central sulcus and not anatomically or functionally connected<br>
+<input type="checkbox" id="q1b" name="question" value=""> The inhibitory somatomotor area is located in the posterior part of the inferior frontal gyrus, just anterior to the motor operculum<br>
+<input type="checkbox" id="q1c" name="question" value=""> The sensorymotor cortex is quite standard between different individuals, functional mapping rarely provides a functional map different than the textbook one<br>
+<input type="checkbox" id="q1d" name="question" value=""> The pyramidal tract origins only from the primary motor cortex<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+<img id="answerQ1_pictureb">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. The sensorimotor cortical areas are densely connected. Select the statement that best represents their connections:</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="W"> Sensorimotor areas and association areas have the same proportion of local and distant connectivity<br>
+<input type="radio" id="q2" name="question" value="W"> Sensoritotor areas have strong distant connectivity while association areas have stronger local connectivity<br>
+<input type="radio" id="q2" name="question" value="R"> Sensorimotor areas have strong local connectivity while association areas display more distant connectivity<br>
+<input type="radio" id="q2" name="question" value="W"> Both sensorimotor areas and association areas have only local connectivity<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question3" name="question3">
+<p><b>Q3. Check the correct statement(s) regarding the semiology of seizures from the sensorimotor area:</b></p>
+<br>
+<input type="checkbox" id="q3a" name="question" value=""> Tonic and clonic motor symptoms with Jacksonian progression occur in two thirds of patients with central epilepsy<br>
+<input type="checkbox" id="q3b" name="question" value=""> Sensory symptoms are rarely associated with motor seizures<br>
+<input type="checkbox" id="q3c" name="question" value=""> Spasms and complex posturing are one of the semiologies from sensorimotor area seizures<br>
+<input type="checkbox" id="q3d" name="question" value=""> Vocalization is one seizure semiology in the sensorimotor area seizures<br>
+<input type="checkbox" id="q3e" name="question" value=""> Speech arrest is one seizure semiology in the sensorimotor area seizures<br>
+<input type="checkbox" id="q3f" name="question" value=""> Bilateral motor semiology is most often due to spread to both sensorimotor areas rather than to generalization<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>Q4. The sensorimotor cortex is very close to the skull. Therefore, motor seizures originating from the sensorimotor cortex are always seen on scalp EEG.</b></p>
+<br>
+<input type="radio" id="q4" name="question" value="T"> True<br>
+<input type="radio" id="q4" name="question" value="F"> False<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question5" name="question5">
+<p><b>Q5. You have a patient in whom the non-invasive studies make you suspect a motor seizure coming from the central region. The MRI shows no lesion. You would like to cover with sEEG the following area(s):</b></p>
+<br>
+<input type="radio" id="q5a" name="question" value=""> Primary motor cortex<br>
+<input type="radio" id="q5b" name="question" value=""> Primary sensory cortex<br>
+<input type="radio" id="q5c" name="question" value=""> Supplementary motor area<br>
+<input type="radio" id="q5d" name="question" value=""> Frontal eye field<br>
+<input type="radio" id="q5e" name="question" value=""> Occipital cortex<br>
+<input type="radio" id="q5f" name="question" value=""> Insular cortex<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question6" name="question6">
+<p><b>Q6. Check the indication(s) for sEEG in sensorimotor epilepsy in the following cases of patients with seizures suspected to come from the sensorimotor area based on non-invasive evaluation:</b></p>
+<br>
+<input type="checkbox" id="q6a" name="question" value=""> There is a type II FCD which is well delimited, small, and touching on the anterior part of the supplementary motor area<br>
+<input type="checkbox" id="q6b" name="question" value=""> No lesion on MRI<br>
+<input type="checkbox" id="q6c" name="question" value=""> Bilateral and extensive polymicrogyria<br>
+<input type="checkbox" id="q6d" name="question" value=""> Well-delimited DNET<br>
+<input type="checkbox" id="q6e" name="question" value=""> Well-delimited ganglioglioma<br>
+<input type="checkbox" id="q6f" name="question" value=""> Diffuse encephalomalacia<br>
+<input type="checkbox" id="q6g" name="question" value=""> Unclear lateralization<br>
+<input id="buttonQ6" type="button" value="Done!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+</div>
+
+
+
+<form id="question7" name="question7">
+<p><b>Q7. Check the correct statement(s) regarding radiofrequency thermocoagulation for the sensorimotor area:</b></p>
+<br>
+<input type="checkbox" id="q7a" name="question" value=""> RF cannot be used as a first intervention<br>
+<input type="checkbox" id="q7b" name="question" value=""> RF cannot be used as a repeated intervention<br>
+<input type="checkbox" id="q7c" name="question" value=""> Type II FCD is a pathology that should be targeted first with RF<br>
+<input type="checkbox" id="q7d" name="question" value=""> DNET is a pathology that should be targeted first with RF<br>
+<input type="checkbox" id="q7e" name="question" value=""> If there is proximity between lesion and functional areas, RF is a good first option<br>
+<input id="buttonQ7" type="button" value="Done!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question8" name="question8">
+<p><b>Q8. In the authors' center, describe what is the approach to sEEG:</b></p>
+<br>
+<input type="radio" id="q8" name="question" value="Fishing"> Cover bilateral sensorimotor areas broadly. A prior hypothesis based on non-invasive EEG is typically not as helpful as a broad coverage <br>
+<input type="radio" id="q8" name="question" value="BCH"> Develop a hypothesis based on non-invasive methods, implant sEEG based on that hypothesis, develop a surgical plan, resect and explant at the same time. Same as at BCH<br>
+<input type="radio" id="q8" name="question" value="noBCH"> Develop a hypothesis based on non-invasive methods, implant sEEG based on that hypothesis, explant electrodes, develop a surgical plan, and resect<br>
+<input id="buttonQ8" type="button" value="Done!" onclick="checkQ8();">
+</form>
+
+<div id="after_submitQ8">
+<p id="answerQ8"></p>
+<br>
+<figure>
+<img id="answerQ8_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ8_picture"></p>
+<br>
+<figure>
+<img id="answerQ8_pictureb">
+</figure>
+<br clear="all" />
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>WHAT WE LEARNED TODAY</b></h2>
+<br>
+<p>After reviewing this chapter we learned that the sensorimotor representation is highly variable between individuals. 
+ Therefore, functional mappping may show that the motor and sensory representation is not as in the textbook (we see
+ this frequently with TMS maps). Additionally, the sensorimotor primary and secondary areas are highly connected, so
+ they function more as a network than as isolated regions with rigid unique functions.<br>
+ There are multiple seizure semiologies coming from the sensorimotor areas including spasms, complex posturing, vocalization,
+ speech arrest, sensory symptoms, eye and head deviation,... which are not the textbook focal seizure with Jacksonian march. <br>
+ To make things even more complicated, some motor seizures coming from the sensorimotor area are not detected on
+ scalp EEG.<br>
+ Therefore, as the chapter says, both ictal symptomatology and scalp EEG may be misleading in identifying the central region
+ as the region of seizure onset. Additionally, lateralization may be also misleading because of the rapid contralateral
+ spread.<br>
+ When there a lesion which is well demarcated and there is little risk of functional deficit and lateralization
+ of seizures is concordant, go for single stage resection. Otherwise, sEEG.<br>
+ Large lesions like polymicrogyrias or encephalomalacias can have epileptogenic areas and quiet areas. Therefore,
+ sEEG may be able to make a patient with a large "inoperable" lesion able to take out the seizure onset zone while
+ sparing functional areas.<br>
+ Radiofrequency thermocoagulation is an alternative when the lesion or area of interest is too entrenched with
+ critical functional areas, so we reduce the lesion mass and hope that it works.</p>
+
+<br>
+<br>
+
+
+
+
+</body>
+
+</html>
