@@ -173,7 +173,7 @@ function checkQ7() {
 
 function checkQ8() {
 
-	if (document.question6.question.value == "Fishing") {
+	if (document.question8.question.value == "Fishing") {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "Fishing expedition without knowing what you are doing. Always a bad idea! <br><br>";
 		document.getElementById("after_submitQ8").style.background = "red";
