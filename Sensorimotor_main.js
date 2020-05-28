@@ -131,7 +131,7 @@ function checkQ6() {
 	if (document.getElementById("q6a").checked == false && document.getElementById("q6b").checked == true && document.getElementById("q6c").checked == true && document.getElementById("q6d").checked == false && document.getElementById("q6e").checked == false && document.getElementById("q6f").checked == true && document.getElementById("q6g").checked == true) {
 		document.getElementById("after_submitQ6").style.visibility = "visible";
 		document.getElementById("answerQ6").innerHTML = "Correct! <br><br> In cases where there is a well delimited lesion (the authors include well-delimited type II FCD, DNET or ganglioglioma, although these are typically not well delimited) and there is no major deficit expected (for example, frontal region affecting part of the SMA) you can do just lesionectomy according to the authors. For other cases, sEEG.";
-		document.getElementById("after_submitQ5").style.background = "lightgreen";
+		document.getElementById("after_submitQ6").style.background = "lightgreen";
 	} else {
 		document.getElementById("after_submitQ6").style.visibility = "visible";
 		document.getElementById("answerQ6").innerHTML = "Not correct. <br><br> Make sure you checked all correct answers and unchecked all incorrect answers.";
